@@ -12,12 +12,14 @@ mongoose.connect(keys.mongoURI)
 
 const app = express()
 
+//apply cookie-session middleware before route handler
 app.use(
   session({
     maxAge: 30 * 24 * 60 * 60 * 1000,
     keys: [keys.cookieKey]
   })
 )
+//apply passport middleware before route handler
 app.use(passport.initialize())
 app.use(passport.session())
 
