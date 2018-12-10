@@ -1,6 +1,10 @@
-- Uses MLab for remote instance of MongoDB
+# emmo
 
-- For this app to work in your environemt, you will need to provide your own `keys.js` file containing the following keys:
+> Work In Progress
+
+- Uses MLab for remote instance of MongoDB.
+
+- For this app to work in your environemt, you will need to provide your own `dev.js` file containing the following keys:
 
 ```js
 module.exports = {
